@@ -105,7 +105,7 @@ header{
 }
 
 .button-orange{
-    padding: 10px 45px;
+    padding: 10px 40px;
     font-size: 1.2rem;
     color: white;
     background-color:#D37533;
@@ -116,9 +116,10 @@ header{
     cursor: pointer;
 }
 .button-orange:hover{
-    background-color:white;
+    background-color:#a45923;
     color: black;
     border:2px solid #D37533;
+    transform: translateY(-3px);
 }
 
 
@@ -146,6 +147,8 @@ header{
   }
 
   .contact-info {
+    width: auto;
+    height: 100%;
     background-color: #000;
     color: #fff;
     padding: 40px 30px;
