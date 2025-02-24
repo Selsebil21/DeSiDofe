@@ -40,19 +40,63 @@
         <section id="page-acceuil">
             <img class="fond-hero" src="../Visu/Réservation.jpg" alt="Réservation-fond d'image restaurant">
             <div class="conteneur-texte-hero" >
-                <h1 class="titre-hero"  >Réservation</h1>
+                <h1>Réservation</h1>
             </div>
         </section>
 
         <section id="Section-2">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora incidunt neque quos tenetur repellat numquam vitae nisi earum! Eveniet dolore maiores dolores nihil provident ullam deserunt nam molestiae quo veritatis?</p>
-            <div class="Formulaire-contact">
-                <input type="Nom et Prénom*">
-                <input type="Numéro de téléphone*">
-                <input type="Nombre de personne*">
-                <input type="Chosiir une dates">
-                <input type="Choisir une heure">
-            </div>
+          
+            <form class="Formulaire-contact">
+                <div class="form-row"> 
+                    <div class="form-group">
+                    <!-- une sous-div "form-group" pour chaque case de formulaire à remplir -->
+                        <label for="name">Nom et Prénom*</label>
+                        <!-- le label est la case : avec sa catégorie "for name" -->
+                        <input type="text" id="name" name="name" placeholder="Entrer votre NOM & Prénom" required>
+                        <!-- l'input cest ce qui est écrit à l'intérieur de la case avant que l'on séléctionne le champ -->
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numéro de téléphone*</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Entrer votre numéro" required>
+                    </div>
+                </div>
+            
+                <div class="form-row">
+                    <div class="form-group">
+                    <label for="people">Nombre de personne*</label>
+                    <select id="people" name="people" required>
+                        <option value="" disabled selected>Choisir</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8+">8+</option>
+                    </select>
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="date">Choisir une date</label>
+                    <input type="date" id="date" name="date" required>
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="time">Choisir une heure</label>
+                    <select id="time" name="time" required>
+                        <option value="" disabled selected>Choisir</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                    </select>
+                    </div>
+                </div>
+                </form>
+         
             <button class="button" >Button sample</button>
         </section>
     </main>
