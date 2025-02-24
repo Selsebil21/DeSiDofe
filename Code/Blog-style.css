@@ -10,7 +10,6 @@ body{
 
 body{
     font-size: 1.2rem;
-    background-color: black;
 }
 
 *{
@@ -123,7 +122,50 @@ header{
 }
 
 
-/* SECTION n°1 : */
+
+/* SECTION n°1 : Page d'acceuil - HERO */
+
+#page-acceuil{
+    width: 100%;
+    height: fit-content;
+}
+
+.fond-hero{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.conteneur-texte-hero{
+    position: absolute; /*pour mettre conteneur au dessus de l'image*/
+    max-width: 700px;
+    color:white;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 70%;
+}
+
+.conteneur-texte-hero h1{
+    font-family: "Italiana", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.5rem;
+}
+
+/* SECTION n°2 : Le Blog */
+#Le-Blog{
+    width: 95%;
+    height: fit-content;
+    margin: 4% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
 
 
