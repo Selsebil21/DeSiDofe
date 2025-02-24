@@ -335,16 +335,16 @@ header{
     justify-content: space-evenly;
     gap: 25px;
 }
- .boite-last-drte p{
+.boite-last-drte p{
     max-width: 40%;
     text-align: center;
- }
+}
 
 
 
  /* LE FOOTER  */
 
- footer{
+footer{
     width: 100%;
     height: fit-content;
     margin: auto;
@@ -379,42 +379,42 @@ header{
 #Footer{
     color: white;
 }
- .mini-column{
+.mini-column{
     display: flex;
     flex-direction: column;
     gap: 10%;
- }
- .mini-column input{
+}
+.mini-column input{
     padding: 10px 20px;
     border: 2px solid  #D37533;
     border-radius: 5px;
- }
+}
 
- .footer-bas{
+.footer-bas{
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 20%;
- }
- .footer-bas2{
+}
+.footer-bas2{
     width: 50%;
     height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 20%;
- }
- .footer-icon{
+}
+.footer-icon{
     width: 7%;
     height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
- }
+}
  
- .icon{
+.icon{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -426,3 +426,148 @@ header{
 #Footer hr{
     color: white;
 }
+
+/* Ajouts de media queries pour le responsive */
+
+/* Petits téléphones : 320px - 480px */
+@media screen and (max-width: 400px) {
+    .barre-de-navigation{
+        display: none;
+    }
+    .Logo-nav{
+        display: block;
+    }
+}
+
+
+    /* body {
+      font-size: 1rem;
+    }
+  
+    header {
+      height: 80px;
+    }
+
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .barre-de-navigation {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 20px;
+        transition: left 0.3s ease;
+    }
+    
+    .barre-de-navigation.active {
+        left: 0;
+    }
+  
+    .Logo-nav {
+      width: 80px;
+      height: auto;
+    }
+  
+    #Page-acceuil .fond-hero {
+      height: 250px;
+    }
+  
+    .conteneur-texte-hero {
+      max-width: 90%;
+      top: 30%;
+      margin-top: 10%;
+    }
+  
+    .conteneur-texte-hero h1 {
+      font-size: 2rem;
+    }
+  
+    .Le-Restaurant, #La-Cheffe, #Derniere-section {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+  
+    .boite-gch, .boite-drte, .boite-last-drte {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .image-portrait, #La-Cheffe img, .map {
+      width: 100%;
+      height: auto;
+    }
+  
+    #grid-3 {
+      grid-template-columns: 1fr;
+    }
+  
+    #grid-3 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .footer-haut {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      text-align: center;
+    }
+  
+    .footer-bas {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .footer-icon {
+      width: auto;
+    }
+  
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  /* Grands téléphones et petits appareils : 481px - 768px */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 1.1rem;
+    }
+  
+    header {
+      height: 100px;
+    }
+  
+    .barre-de-navigation {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .conteneur-texte-hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .Le-Restaurant, #La-Cheffe, #Derniere-section {
+      flex-direction: column;
+    }
+  
+    #grid-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .footer-haut {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .footer-bas2 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  } 
+    */
