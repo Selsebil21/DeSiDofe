@@ -143,14 +143,14 @@ header{
     font-family: "Italiana", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .button-orange{
     padding: 10px 45px;
     font-size: 1.2rem;
     color: white;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.075);
     border: 2px solid white;
     border-radius: 10px;
     text-align: center;
@@ -170,11 +170,11 @@ header{
 .Le-Restaurant{
     width: 85%;
     height: auto;
-    margin: 4% auto;
+    margin: 5% auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10%;
+    gap: 5%;
 }
 
 .boite-gch{
@@ -210,16 +210,32 @@ header{
 #La-Cheffe{
     width: 100%;
     height: auto;
-    margin: 4% auto;
+    margin: 5% auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 5%;
 }
 
-#La-Cheffe img{
-    width: 700px;
+.conteneur-gauche{
+    width: 60%;
+}
+
+.conteneur-gauche img{
+    width:100% ;
     height: auto;
     border-radius:0 3px 3px 0;
+}
+
+.conteneur-droite{
+    width: 50%;
+    margin: auto 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 45px;
 }
 
 
@@ -310,22 +326,22 @@ header{
 
 #Derniere-section{
     width: 100%;
-    height: auto;
+    height: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
 }
 
 .map{
     width: 50%;
-    height:auto ;
+    height:100%;
 }
 
 .boite-last-drte{
     width: 50%;
-    /* min-height: 508px; */
-    height:750px ;
+    min-height: 508px;
     padding: 50px 0;
     background-color: black;
     color: white;
