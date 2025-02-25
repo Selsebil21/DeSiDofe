@@ -84,7 +84,7 @@ header{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size:2rem;
+    font-size:1.5rem;
 }
 
 .button{
@@ -162,13 +162,13 @@ header{
 /* SECTION 2 :  Daisy FONTAINE - Description    */
 
 #Daisy{         
-    width: 85%;
+    width: 95%;
     height: auto;
     margin: 4% auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10%;
+    gap: 9%;
 }
 
 .styled-hr {
@@ -189,6 +189,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     gap: 45px;
 }
 
@@ -196,9 +197,9 @@ header{
     text-align: center;
 }
 
-.image-portrait{
-    width: 400px;
-    height: 500px;
+#Daisy img{
+    width: 30%;
+    height: auto;
     border-radius: 3px;
 }
 
@@ -238,7 +239,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10%;
+    gap: 9%;
 }
 
 .styled-hr {
@@ -286,52 +287,35 @@ header{
 }
 
 .boite-centrale{
-    width: 85%;
-    height: 100%;
-    margin: auto;
     padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 45px;
 }
 
-#agencement-photo{
+.image-haut{
+    width: 70.5%;
+    height: 35%;
+}
+
+.image-bas{
     width: 100%;
-    height: fit-content;
     margin: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
+    flex-direction: row;
+    gap: 6px;
 }
 
-.ligne-haut .ligne-bas{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-direction:row ;
-    align-items: center;
-    gap: 5px;
+.image2{
+    width: 50%;
 }
 
-.image-horizontale{
-    max-width:800px ;
-    min-height: 300px;
+.image3{
+    width: 20%;
 }
 
-.image-horizontale-2{
-    max-width: 556px;
-    min-height: 300px;
-}
-
-.image-horizontale-3{
-    max-width: 239px ;
-    min-height: 300px;
-}
 
 
  /* LE FOOTER  */
