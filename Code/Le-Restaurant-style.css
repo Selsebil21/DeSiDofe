@@ -122,24 +122,25 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10%;
+    gap: 9%;
 }
 
 .image-portrait{
-    width: 400px;
+    width: 25%;
     height: 500px;
     border-radius: 3px;
 }
 
 .boite-centrale{
-    width: 40%;
+    width: 50%;
     height: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 54px;
+    text-align: center;
+    gap: 45px;
 }
 .boite-centrale p{
     text-align: center;
@@ -195,16 +196,29 @@ header{
 #La-Cheffe{
     width: 100%;
     height: auto;
-    margin: auto;
+    margin: 5% auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 5%;
 }
 
 #La-Cheffe img{
-    width: 53%;
+    width: 45%;
     height: auto;
     border-radius: 3px 0 0 3px;
+}
+
+.conteneur-gauche-lacheffe{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 45px;
 }
 
 
@@ -214,34 +228,45 @@ header{
     width: 100%;
     height: auto;
     margin-top: 8%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);    
     align-items: center;
-    gap: 3%;
+    gap: 10px;
     background-color: rgba(0, 0, 0, 0.945);
+}
+
+#Galerie img{
+    width: 100%;
+    height: auto;
+    max-height: 590px;
 }
 
 .Photo {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.image-caré{
-    width: 90%;
-    height: fit-content;
-    position: relative;
+.Photo img{
+    max-height: 590px;
+    height: 100%;
 }
 
 .Photo p {
     position: absolute;
-    top: 70%; /*la position verticale */
-    left: 40%;
-    transform: translateX(-50%);
-    color: white;
+    top: 65%; /*la position verticale */
+    left: 25%;
+    color:white;
     font-family: "Italiana", serif;
     font-weight: 900;
     font-size: 3rem;
+    text-align: center;
     z-index: 2; /*le texte est au-dessus de l’image */
+}
+
+.Photo p:hover{
+    transform: translateY(+30%);
+    cursor: pointer;
 }
 
 
@@ -330,4 +355,8 @@ header{
 
 #Footer hr{
     color: white;
+}
+
+@media screen {
+    
 }
